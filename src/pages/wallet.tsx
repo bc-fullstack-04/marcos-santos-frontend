@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Input from "../components/Input";
+import Input from "../components/input";
 import Header from "../components/header-home";
 import { album_api, user_api } from "../services/apiServices";
 import { Navigate, redirect } from "react-router-dom";

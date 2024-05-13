@@ -1,5 +1,5 @@
 import { Link, Navigate, useNavigate } from "react-router-dom";
-import Input from "../components/Input";
+import Input from "../components/input";
 import ButtonLogin from "../components/button-login";
 import { FormEvent, useState } from "react";
 import { user_api } from "../services/apiServices";
