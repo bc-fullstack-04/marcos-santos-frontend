@@ -1,16 +1,60 @@
+
+
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="src/assets/soon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Vite + React + TS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="/src/global.css" type="text/css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <title>BootPlay</title>
+    <style>
+      
+    </style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+   
+    <script>
+      $(document).ready(function(){
+        $('.slider').slick({
+          infinite: true, // Loop infinito
+          slidesToShow: 3, // Quantidade de slides visíveis ao mesmo tempo
+          slidesToScroll: 1, // Quantidade de slides a avançar ou retroceder
+          autoplay: true, // Autoplay ativado
+          autoplaySpeed: 1000, // Velocidade do autoplay em milissegundos
+          prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+          nextArrow: '<button type="button" class="slick-next">Next</button>',
+          responsive: [
+            {
+              breakpoint: 768, // Alterações para telas menores que 768px
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 480, // Alterações para telas menores que 480px
+              settings: {
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+      });
+  </script>
+  
   </body>
 </html>

@@ -2,8 +2,25 @@
 export default {
   content: ["./src/**/*.{html,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'dark': 'rgb(29 35 42)'
+      },
+
+      backgroundImage: {'fundo': "url('./src/assets/bottom-welcome.jpg')", 
+                        'banner': "url('./src/assets/banner.jpg')"
+       },
+    } ,
+    
+    
+    
   },
-  plugins: [],
+  plugins: [
+    require('daisyui')
+  ],
+
+  daisyui: {
+    themes: ["light", "dark",],
+  }
 }
 
