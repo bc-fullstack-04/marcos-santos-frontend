@@ -24,5 +24,5 @@ Ainda no terminal, execute o seguinte comando:
 
     npm run dev
 
-Após isso, o projeto se inicializará na porta 5173
+Após isso, o projeto será iniciado na porta 5173
 
